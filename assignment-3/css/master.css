@@ -17,7 +17,7 @@ a:hover, a:focus { color: red;
 
 ul { }
 
-h1 { }
+h1 { font-family: 'Open Sans'; }
 
 p { }
 
@@ -61,6 +61,8 @@ table, th, td { border: 1px solid black;
 		margin-left: 0;
 		padding-right: .5em;
 		float: left; }
+
+#product-img figcaption{ text-align: center; }
 
 #product-desc {
 		margin-top: 0;
