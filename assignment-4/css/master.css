@@ -86,9 +86,19 @@ table, th, td { border: 1px solid black;
 #review-box img {
 		width: .75em; }
 
-.slogan{ font-style: italic; }
+#right-box {
+		float: right;
+}
 
-.price{ font-style: normal; font-weight: bold;}
+#welcome {
+		padding-right: 2em;
+}
+
+#price{ font-style: normal; font-weight: bold;}
+
+#studentPrice{ font-style: normal; font-weight: bold;}
+
+.slogan{ font-style: italic; }
 
 .pad{ padding: .5em; }
 
