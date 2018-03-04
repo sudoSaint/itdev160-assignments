@@ -7,19 +7,18 @@
   var greeting;
   var price = 3129.99;
   var studentDiscount = .10;
-  var studentPrice = price - (price * studentDiscount) ;
+  var studentPrice = parseFloat(price - (price * studentDiscount)).toFixed(2) ;
 
-  function getGreeting(greeting){
-    if (hourNow > 18) {
-      greeting = 'Good evening!';
-    } else if (hourNow > 12) {
-      greeting = 'Good afternoon!';
-    } else if (hourNow > 0) {
-      greeting = 'Good morning!';
-    } else {
-      greeting = 'Welcome!';
-    }
+  if (hourNow > 18) {
+    greeting = 'Good evening!';
+  } else if (hourNow > 12) {
+    greeting = 'Good afternoon!';
+  } else if (hourNow > 0) {
+    greeting = 'Good morning!';
+  } else {
+    greeting = 'Welcome!';
   }
+
 
   var elGreeting = document.getElementById('welcome');
   elGreeting.textContent = greeting;
