@@ -1,100 +1,69 @@
 body {
 	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
-	font-family: 'Open Sans', sans-serif;
-	color: #555;
-	margin: 0;
-}
-
-header {
-	display: flex;
-	padding: 5px;
-	color: #efefef;
-	background-color: #2d2d2d;
-	border: solid 1px #000;
-}
-
-header #header-menu {
-	flex-grow: 1;
-	text-align: right;
-	color: #777;
-	font-size: smaller;
+	flex-direction: column;
+	font-family: "Open Sans", sans-serif;
 }
 
 main {
+	display: flex;
 	flex: 1;
 }
 
-main #display-content {
+header {
+	background-color: #23282D;
+}
+
+header h1 {
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+}
+
+#sidebar {
+	width: 225px;
+	flex: 0 0 12em;
+	background-color: #23282D;
+}
+
+#sidebar ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#sidebar ul li {
+	color: #eee;
+	padding: 0 0 10px 20px;
+}
+
+#sidebar ul li:hover {
+	cursor: pointer;
+	background-color: #32373C;
+}
+
+#post-container {
+	flex: 1;
+	background-color: #eee;
 	padding: 20px;
 }
 
-footer#content-footer {
-	min-height: 80px;
-	background-color: #eee;
-	border-top: solid 1px #555;
+blockquote {
+	font-style: italic;
+	margin: 1em 1em 1em 0;
 }
 
-ul.footer {
-	text-align: center;
-	list-style: none;
+blockquote:before, blockquote:after {
+	content: '"';
 }
 
-ul.footer li {
-	display: inline-block;
-}
-
-ul.footer span {
-	font-weight: bold;
-	color: brown;
-}
-
-/* Modal styles */
-#modal-backdrop {
-	display: none;
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
-	background-color: rgba(0,0,0,0.75);
-}
-
-#modal-backdrop.visible {
-	display: block;
-}
-
-.modal {
-	display: none;
-	position: absolute;
-	padding: 10px;
-	border: solid 1px #555;
-	background-color: #fff;
-	z-index: 99999;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.modal.visible {
-	display: block;
-}
-
-#modal-content {
-}
-
-#edit-content-text {
+.author {
 	width: 100%;
-	box-sizing: border-box;
+	display: inline-block;
+	text-indent: 5%;
 }
 
-/* Tooltip styles */
-#tooltip {
-	display: none;
-	position: absolute;
-}
-
-#tooltip.visible {
-	display: block;
+.author:before {
+	content: '-';
 }
 
 .wrapper{ text-align: center; }
